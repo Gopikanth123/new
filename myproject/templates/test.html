@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+        .carousel {
+            background: #EEE;
+        }
+
+        .carousel-cell {
+            width: 45%;
+            height: 400px;
+            margin-right: 10px;
+            background: #17a2b8;
+            border-radius: 5px;
+            counter-increment: gallery-cell;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+        }
+
+        /* cell */
+        .carousel-cell:before {
+            display: block;
+            text-align: center;
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+        }
+
+        .feedback {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel" data-flickity='{ "autoPlay": true }'>
+        <div class="carousel-cell">
+            <p class="feedback">"Welcome"</p>
+        </div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
